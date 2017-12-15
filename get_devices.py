@@ -111,9 +111,9 @@ def grabDeviceIDs():
     deviceList = (getDeviceListFromJSS()["computers"])
     
     # output text
-	f = open(jss_computer_output_file,'w')
-	f.write(deviceList)
-	f.close()
+    f = open(jss_computer_output_file,'w')
+    f.write(deviceList)
+    f.close()
 	
     ## parse the list
     for deviceListJSON in deviceList:
